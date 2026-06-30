@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
     <title>Savoria Restaurant</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
   </head>
   <body>
     <header>
@@ -20,17 +23,40 @@
       </nav>
     </header>
     <main>
-      <section>
-        <h1>Savoria Restaurant</h1>
-        <img src="Image1.jpg" alt="Hot pizza with melted cheese being sliced" />
-        <video controls>
-          <source src="Food video.mp4" type="video/mp4" />
+<section class="hero">
+
+    <!-- LEFT SIDE -->
+    <div class="left">
+
+        <h1 >Savoria Restaurant</h1>
+
+        <p class="tagline">
+            Experience Authentic Taste Like Never Before
+        </p>
+
+        <img src="images/hero5.jpg" class="main-image">
+
+    </div>
+
+    <!-- RIGHT SIDE -->
+
+    <div class="right">
+
+        <img src="images/food2.avif" class="top-image">
+
+        <video autoplay muted loop class="video-box">
+            <source src="videos/food.mp4.mp4">
         </video>
-        <video controls>
-          <source src="Chef.mp4" type="video/mp4" />
+
+        <video autoplay muted loop class="video-box">
+            <source src="videos/chef.mp4.mp4">
         </video>
-        <a href="https://paymentgateway.com">Order NOW!</a>
-      </section>
+
+        <a href="#" class="btn">Order NOW!</a>
+
+    </div>
+
+</section>
       <section>
         <h2>About US</h2>
         <p>
