@@ -104,11 +104,9 @@ h1{
 .card h3{
     font-size:24px;
     color:#2d2d2d;
-    margin:15px 0 10px;
 }
 .card p{
     color:#777;
-    margin-bottom:12px;
     font-size:16px;
 }
 .card h4{
@@ -164,6 +162,7 @@ img{
     object-fit:cover;
     border-radius:15px;
     margin-bottom:15px;
+    transition: transform .4s ease;
 }
 
 /* ===========================
@@ -227,12 +226,16 @@ video{
     border-radius:20px;
     overflow:hidden;
     box-shadow:0 12px 30px rgba(0,0,0,.12);
-    transition:.3s;
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease; 
 
     padding:20px;
 
     display:flex;
     flex-direction:column;
+    cursor:pointer;
+    gap:15px;
 }
 .dish-container{
     display:grid;
@@ -242,17 +245,54 @@ video{
 
 .card:hover{
 
-    transform:translateY(-8px);
-    box-shadow:0 18px 40px rgba(0,0,0,.18);
+    transform:translateY(-12px);
+    box-shadow:0 25px 50px rgba(0,0,0,.18);
+
 
 }
 
-.card span{
-
+.card h4 span{
     text-decoration:line-through;
     color:#888;
     font-size:16px;
     margin-left:10px;
+}
+
+.image-container{
+    position:relative;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.badge{
+    position:absolute;
+    top:15px;
+    left:15px;
+
+    background:#e63946;
+    color:white;
+
+    padding:8px 14px;
+
+    border-radius:50px;
+
+    font-size:13px;
+    font-weight:bold;
+
+    letter-spacing:.5px;
+
+    box-shadow:0 6px 15px rgba(0,0,0,.25);
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card:hover .btn{
+
+    transform:scale(1.08);
+
+    background:#b30000;
 
 }
 
