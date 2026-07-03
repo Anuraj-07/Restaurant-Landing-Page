@@ -32,6 +32,8 @@ header{
     position:sticky;
     top:0;
     z-index:1000;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 20px rgba(0,0,0,.12);
 }
 
 /* ===========================
@@ -79,7 +81,7 @@ nav a:hover{
     display:flex;
     flex-direction:column;
     align-items:center;
-    gap:20px;
+    gap:28px;
 }
 
 /* ===========================
@@ -102,7 +104,9 @@ h1{
     margin-bottom:35px;
 }
 .card h3{
-    font-size:24px;
+    font-size:30px;
+    margin-top: 10px;
+    font-weight: 700;
     color:#2d2d2d;
 }
 .card p{
@@ -111,7 +115,8 @@ h1{
 }
 .card h4{
     color:#8b0000;
-    font-size:22px;
+    font-size:28px;
+    font-weight: 700;
 }
 
 /* ===========================
@@ -158,9 +163,9 @@ img{
 }
 .card img{
     width:100%;
-    height:220px;
+    height:230px;
     object-fit:cover;
-    border-radius:15px;
+    border-radius:18px;
     margin-bottom:15px;
     transition: transform .4s ease;
 }
@@ -240,7 +245,7 @@ video{
 .dish-container{
     display:grid;
     grid-template-columns:repeat(2,1fr);
-    gap:30px;
+    gap:22px;
 }
 
 .card:hover{
@@ -265,27 +270,23 @@ video{
 }
 
 .badge{
-    position:absolute;
-    top:15px;
-    left:15px;
 
-    background:#e63946;
-    color:white;
+padding:9px 18px;
 
-    padding:8px 14px;
+font-size:12px;
 
-    border-radius:50px;
+border-radius:40px;
 
-    font-size:13px;
-    font-weight:bold;
+background:linear-gradient(
+90deg,
+#ff4b2b,
+#ff416c
+);
 
-    letter-spacing:.5px;
-
-    box-shadow:0 6px 15px rgba(0,0,0,.25);
 }
 
 .card:hover img{
-    transform:scale(1.08);
+    transform:scale(1.04);
 }
 
 .card:hover .btn{
@@ -337,4 +338,273 @@ to{
     transform:translateY(0);
 }
 
+}
+
+/* ===========================
+        ABOUT US
+=========================== */
+
+.about{
+
+    text-align:center;
+    background:
+    linear-gradient(
+        180deg,
+        #fffdf9,
+        #fff8ef
+    );
+
+}
+
+.about h2{
+
+    font-size:48px;
+
+    color:#8b0000;
+
+    margin-bottom:20px;
+}
+
+.about-text{
+
+    font-size:20px;
+
+    color:#666;
+
+    max-width:700px;
+
+    margin:0 auto 60px;
+
+    line-height:1.7;
+
+}
+
+.stats-container{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+
+.stat-card{
+
+background:white;
+
+padding:45px 25px;
+
+border-radius:28px;
+
+text-align:center;
+
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+transition:.4s;
+
+}
+
+.stat-card h3{
+
+    font-size:42px;
+
+    color:#8b0000;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+font-size:18px;
+
+color:#666;
+
+line-height:1.5;
+
+}
+
+.stat-card:hover{
+
+transform:
+translateY(-10px)
+scale(1.03);
+
+box-shadow:
+0 18px 45px rgba(0,0,0,.15);
+
+}
+
+.stat-card h3{
+
+font-size:50px;
+
+color:#8b0000;
+
+margin:20px 0 12px;
+
+transition: .4s ease;
+
+}
+
+.stat-card i{
+
+font-size:42px;
+
+color:#b8860b;
+
+margin-bottom:20px;
+
+transition: .4s ease;
+
+}
+
+.stat-card:hover h3{
+    transform:scale(1.1);
+}
+
+.stat-card:hover i{
+    transform: rotate(15deg) scale(1.2);
+}
+
+.about-subtitle{
+
+font-size:14px;
+
+letter-spacing:4px;
+
+text-transform:uppercase;
+
+color:#b8860b;
+
+font-weight:bold;
+
+margin-bottom:10px;
+
+}
+
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:15px;
+    margin:15px 0 25px;
+}
+
+.divider::before,
+.divider::after{
+    content:"";
+    width:170px;
+    height:2px;
+    background:#2d2d2d;
+}
+
+.divider span{
+    font-size:24px;
+}
+
+/* ===========================
+        POPULAR DISHES
+=========================== */
+
+.popular-dishes{
+    padding:100px 8%;
+    background:#fdf8f2;
+    text-align:center;
+}
+
+.popular-dishes h2{
+    font-size:48px;
+    color:#8b0000;
+    margin-bottom:18px;
+}
+
+.menu-subtitle{
+    font-size:14px;
+    letter-spacing:4px;
+    color:#b8860b;
+    text-transform:uppercase;
+    font-weight:bold;
+}
+
+.divider{
+    margin:20px auto 50px;
+}
+
+.card img{
+    height:230px;
+}
+
+.card{
+
+padding:22px;
+
+gap:18px;
+
+}
+
+.btn{
+
+width:180px;
+
+margin-top:12px;
+
+padding: 18px 50px;
+
+align-self:center;
+
+border-radius:50px;
+
+}
+
+.rating i{
+    color:#ffb400;
+    font-size:17px;
+}
+
+.rating{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    margin-top:-5px;
+}
+
+.star{
+    color:#ffb400;
+    font-size:18px;
+}
+
+.score{
+    font-size:20px;
+    font-weight:700;
+    color:#2d2d2d;
+}
+
+.reviews{
+    color:#777;
+    font-size:16px;
+}
+
+.price{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:14px;
+}
+
+.new-price{
+    color:#8b0000;
+    font-size:34px;
+    font-weight:800;
+}
+
+.old-price{
+    color:#888;
+    text-decoration:line-through;
+    font-size:18px;
 }
