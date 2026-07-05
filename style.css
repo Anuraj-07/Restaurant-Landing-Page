@@ -881,3 +881,261 @@ scale(1.02);
 
 }
 
+.review-card{
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease;
+
+}
+
+.review-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    box-shadow:
+    0 25px 55px rgba(0,0,0,.15);
+
+}
+
+.review-card img{
+
+    transition:
+    transform .4s ease;
+
+}
+
+.review-card:hover img{
+
+    transform:
+    scale(1.08)
+    rotate(3deg);
+
+}
+
+/* ===========================
+        FOOD GALLERY
+=========================== */
+
+.gallery{
+
+    padding:120px 8%;
+    background:#fffdf9;
+    text-align:center;
+
+}
+
+.gallery h2{
+
+    font-size:50px;
+    color:#8b0000;
+    margin:15px 0;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:2fr 1fr;
+
+    grid-template-rows:250px 250px 250px;
+
+    gap:25px;
+
+    margin-top:60px;
+
+}
+
+/* Large Pizza */
+
+.large{
+
+    grid-row:1 / span 2;
+
+}
+
+/* Gallery Card */
+
+.gallery-item{
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    cursor: pointer;
+
+    transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    filter .45s ease;
+
+    box-shadow:
+    0 10px 25px rgba(0,0,0,.12);
+}
+
+.gallery-item:hover{
+
+    transform:
+    translateY(-10px)
+    scale(1.02);
+
+    box-shadow:
+    0 30px 60px rgba(0,0,0,.25);
+}
+
+.gallery-item img{
+
+    width:100%;
+    height:100%;
+    object-fit:cover;
+
+    transition:
+    transform .8s ease,
+    filter .6s ease;
+
+}
+
+
+/* Overlay */
+
+.overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    gap:18px;
+
+    background:rgba(0,0,0,.35);
+
+    opacity:0;
+
+    transition:.45s ease;
+
+}
+
+.overlay h3{
+
+    color:white;
+
+    font-size:32px;
+
+    transform:translateY(25px);
+
+    transition:.45s ease;
+
+}
+
+.overlay p{
+
+    color:white;
+
+    transform:translateY(25px);
+
+    transition:.55s ease;
+
+}
+
+.overlay .btn{
+
+    padding:14px 38px;
+
+    border-radius:40px;
+
+    transition:.35s;
+
+}
+
+
+
+/* Hover Effects */
+
+.gallery-item:hover img{
+
+    transform:scale(1.12);
+
+    filter:brightness(.65);
+
+}
+
+.gallery-item:hover .overlay{
+
+    opacity:1;
+
+}
+
+.overlay .btn:hover{
+
+    transform:scale(1.08);
+
+    box-shadow:
+    0 15px 35px rgba(150,0,0,.35);
+
+}
+
+/*MOBILE MEDIA MANAGEMENT */
+@media(max-width:900px){
+
+.gallery-grid{
+
+    grid-template-columns:1fr;
+
+    grid-template-rows:auto;
+
+}
+
+.large{
+
+    grid-row:auto;
+
+}
+
+.gallery-item{
+
+    height:300px;
+
+}
+
+}
+
+
+.gallery-item:hover h3,
+.gallery-item:hover p,
+.gallery-item:hover .btn{
+
+    transform:translateY(0);
+
+}
+
+/*JAVA ANIMATION ------*/
+
+.gallery-item,
+.review-card{
+
+    opacity:0;
+
+    transform:translateY(60px);
+
+    transition:
+    opacity .8s ease,
+    transform .8s ease;
+
+}
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
