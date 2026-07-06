@@ -14,8 +14,6 @@ const observer = new IntersectionObserver((entries)=>{
     threshold:0.2
 });
 
-document.querySelectorAll(".gallery-item,.review-card").forEach((el)=>{
-
+document.querySelectorAll(".gallery-item,.testimonial-card").forEach(el=>{
     observer.observe(el);
-
 });
