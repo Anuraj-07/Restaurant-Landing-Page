@@ -3,7 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Savoria Restaurant</title>
+    <title>Savoria Restaurant | Premium Dining Experience in Jaipur</title>
+    <meta name="description"
+content="Savoria Restaurant offers authentic Indian cuisine, chef's specials, premium dining, online reservations and unforgettable hospitality in Jaipur.">
+
+<meta name="keywords"
+content="Restaurant, Savoria, Jaipur Restaurant, Indian Food, Fine Dining, Pizza, Biryani, Reservation">
+
+<meta name="author"
+content="Anuraj Bhardwaj">
+
+<meta name="robots"
+content="index, follow">
+
+<meta name="theme-color"
+content="#8b0000">
+
+<meta property="og:title"
+content="Savoria Restaurant">
+
+<meta property="og:description"
+content="Experience authentic flavours crafted with passion and premium hospitality.">
+
+<meta property="og:type"
+content="website">
+
+<meta property="og:image"
+content="images/hero5.jpg">
+
+<meta name="twitter:card"
+content="summary_large_image">
+
+<meta name="twitter:title"
+content="Savoria Restaurant">
+
+<meta name="twitter:description"
+content="Premium restaurant experience with chef specials and online reservations.">
+<link rel="icon" href="images/Savoria.jpg" type="image/png">
     <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="style.css" />
@@ -12,20 +48,54 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
   </head>
   <body>
+    <!-- ===========================
+        LOADER
+=========================== -->
+
+<div id="loader">
+
+    <div class="loader-content">
+
+        <i class="fas fa-utensils"></i>
+
+        <h1>Savoria</h1>
+
+        <p>Preparing your delicious experience...</p>
+
+        <div class="loading-bar">
+
+            <span></span>
+
+        </div>
+
+    </div>
+
+</div>
+<!-- ===========================
+        SCROLL PROGRESS BAR
+=========================== -->
+
+<div id="progress-bar"></div>
     <header>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Veg Menu</a></li>
-          <li><a href="#">Non-Veg Menu</a></li>
-          <li><a href="#">Jain Menu</a></li>
-          <li><a href="#">Your Orders</a></li>
-          <li><a href="#">Profile</a></li>
-        </ul>
-      </nav>
+<nav>
+
+    <a href="#" class="logo">
+        <img src="images/logo.png" alt="Savoria Restaurant Logo">
+    </a>
+
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About US</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#reservation">Reservation</a></li>
+        <li><a href="#footer">Contact us</a></li>
+    </ul>
+
+</nav>
     </header>
     <main>
-<section class="hero">
+<section id="home" class="hero">
 
     <!-- LEFT SIDE -->
     <div class="left">
@@ -36,7 +106,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
             Experience Authentic Taste Like Never Before
         </p>
 
-        <img src="images/hero5.jpg" class="main-image">
+        <img src="images/hero5.jpg"  loading="lazy" class="main-image">
 
     </div>
 
@@ -44,7 +114,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
     <div class="right">
 
-        <img src="images/food2.avif" class="top-image">
+        <img src="images/food2.avif"  loading="lazy" class="top-image">
 
         <video autoplay muted loop class="video-box">
             <source src="videos/food.mp4.mp4">
@@ -59,7 +129,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     </div>
 
 </section>
-<section class="about">
+<section id="about" class="about">
 <p class="about-subtitle">ABOUT US</p>
 
 <h2>About Savoria</h2>
@@ -74,32 +144,33 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <div class="stat-card">
             <i class="fas fa-award"></i>
-            <h3>12+</h3>
-            <p>Years of Excellence</p>
+            <h3 class="counter" data-target="12">0</h3>
+            <p>+ Years of Excellence</p>
         </div>
 
         <div class="stat-card">
             <i class="fas fa-utensils"></i>
-            <h3>500K+</h3>
-            <p>Meals Served</p>
+            <h3 class="counter" data-target="500">0</h3>
+<p>K+ Meals Served</p>
+           
         </div>
 
         <div class="stat-card">
             <i class="fas fa-users"></i>
-            <h3>1.5L+</h3>
-            <p>Happy Customers</p>
+            <h3 class="counter" data-target="150">0</h3>
+<p>L+ Happy Customers</p>
         </div>
 
         <div class="stat-card">
            <i class="fas fa-user-tie"></i>
-            <h3>15+</h3>
+            <h3 class="counter" data-target="15">0</h3>
             <p>Master Chefs</p>
         </div>
 
     </div>
 
 </section>
-<section class="popular-dishes">
+<section id="menu" class="popular-dishes">
     <p class="about-subtitle">OUR MENU</p>
 
 <h2>Popular Dishes</h2>
@@ -112,7 +183,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         <div class="card">
           <div class="image-container">
 
-    <img src="images/pizza.jpg" alt="Pizza">
+    <img src="images/pizza.jpg"  loading="lazy" alt="Pizza">
 
     <span class="badge">🔥 Best Seller</span>
 
@@ -137,7 +208,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         <div class="card">
             <div class="image-container">
 
-            <img src="images/burger.jpg" alt="Pizza">
+            <img src="images/burger.jpg"  loading="lazy" alt="Pizza">
             
     <span class="badge">🔥 Best Seller</span>
 
@@ -162,7 +233,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         
         <div class="card">
 
-            <img src="images/thali.jpg" alt="Pizza">
+            <img src="images/thali.jpg"  loading="lazy" alt="Pizza">
 
             <h3>Veg-Thali</h3>
 
@@ -183,7 +254,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         
         <div class="card">
 
-            <img src="images/cbiryani.webp" alt="Pizza">
+            <img src="images/cbiryani.webp"  loading="lazy" alt="Pizza">
 
             <h3>Chicken Biryani</h3>
 
@@ -208,7 +279,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 <!-- Popular Dishes Ends -->
 
 <!-- Why Choose Us starts here -->
- <section class="why-choose">
+<section id="why" class="why-choose">
 
     <p class="about-subtitle">WHY CHOOSE US</p>
 
@@ -276,7 +347,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </section>
 
-<section class="testimonials">
+<section id="testimonials" class="testimonials">
 
     <p class="about-subtitle">TESTIMONIALS</p>
 
@@ -292,7 +363,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <i class="fas fa-quote-left quote-icon"></i>
 
-            <img src="images/customer1.jpg" alt="Customer">
+            <img src="images/customer1.jpg"  loading="lazy" alt="Customer">
 
             <h3>Rahul Sharma</h3>
 
@@ -309,7 +380,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <i class="fas fa-quote-left quote-icon"></i>
 
-            <img src="images/customer2.jpg" alt="Customer">
+            <img src="images/customer2.jpg"  loading="lazy" alt="Customer">
 
             <h3>Sneha Jain</h3>
 
@@ -326,7 +397,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <i class="fas fa-quote-left quote-icon"></i>
 
-            <img src="images/customer3.avif" alt="Customer">
+            <img src="images/customer3.avif"  loading="lazy" alt="Customer">
 
             <h3>Arjun Singh</h3>
 
@@ -343,7 +414,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </section>
 
-<section class="gallery">
+<section id="gallery" class="gallery">
 
     <p class="about-subtitle">FOOD GALLERY</p>
 
@@ -357,7 +428,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!-- Royal Veg-Thali -->
         <div class="gallery-item large">
-            <img src="images/thalii.jpg" alt="Royal Veg-Thali">
+            <img src="images/thalii.jpg"  loading="lazy" alt="Royal Veg-Thali">
 
             <div class="overlay">
                 <h3>Royal Veg-Thali</h3>
@@ -368,7 +439,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!-- Alfredo Pasta -->
         <div class="gallery-item">
-            <img src="images/alfredo.jpeg" alt="Alfredo Pasta">
+            <img src="images/alfredo.jpeg"  loading="lazy" alt="Alfredo Pasta">
 
             <div class="overlay">
                 <h3>Creamy Alfredo Pasta</h3>
@@ -379,7 +450,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!-- Paneer Tikka Platter -->
         <div class="gallery-item">
-            <img src="images/tikka.webp" alt="Paneer Tikka Platter">
+            <img src="images/tikka.webp"  loading="lazy" alt="Paneer Tikka Platter">
 
             <div class="overlay">
                 <h3>Royal Paneer Tikka Platter</h3>
@@ -390,7 +461,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!--NonVeg Dum Biryani -->
         <div class="gallery-item">
-            <img src="images/biryanii.jpg" alt="Dum-Biryani">
+            <img src="images/biryanii.jpg"  loading="lazy" alt="Dum-Biryani">
 
             <div class="overlay">
                 <h3>Dum Biryani</h3>
@@ -401,7 +472,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <!-- Dessert -->
         <div class="gallery-item">
-            <img src="images/cheesecake.webp" alt="Berry Cheesecake">
+            <img src="images/cheesecake.webp"  loading="lazy" alt="Berry Cheesecake">
 
             <div class="overlay">
                 <h3>Royal Berry Cheesecake</h3>
@@ -418,7 +489,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
       CHEF'S SPECIAL
 =========================== -->
 
-<section class="chef-special">
+<section id="chef" class="chef-special">
 
     <p class="about-subtitle">CHEF'S SPECIAL</p>
 
@@ -434,7 +505,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <div class="chef-feature">
 
-            <img src="images/pizza.jpg" alt="Chef Pizza">
+            <img src="images/pizza.jpg"  loading="lazy" alt="Chef Pizza">
 
             <div class="chef-content">
 
@@ -483,7 +554,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <div class="chef-card">
 
-                <img src="images/burger.jpg">
+                <img src="images/burger.jpg"  loading="lazy">
 
                 <h4>Double Burger</h4>
 
@@ -491,7 +562,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <div class="chef-card">
 
-                <img src="images/cbiryani.webp">
+                <img src="images/cbiryani.webp"  loading="lazy">
 
                 <h4>Chicken Biryani</h4>
 
@@ -499,7 +570,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <div class="chef-card">
 
-                <img src="images/foodimg3.jpg">
+                <img src="images/foodimg3.jpg"  loading="lazy">
 
                 <h4>Italian Pasta</h4>
 
@@ -507,7 +578,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
             <div class="chef-card">
 
-                <img src="images/foodimg5.webp">
+                <img src="images/foodimg5.webp"  loading="lazy">
 
                 <h4>Berry Dessert</h4>
 
@@ -521,7 +592,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 <!-- ================= RESERVATION SECTION ================= -->
 
-<section class="reservation">
+<section id="reservation" class="reservation">
 
     <div class="reservation-heading">
 
@@ -547,7 +618,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
         <div class="reservation-image">
 
-            <img src="images/reservation.avif" alt="Restaurant Dining">
+            <img src="images/reservation.avif"  loading="lazy" alt="Restaurant Dining">
 
         </div>
 
@@ -632,7 +703,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         CALL TO ACTION
 =========================== -->
 
-<section class="cta">
+<section id="cta" class="cta">
 
     <div class="cta-content">
 
@@ -659,7 +730,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         FOOTER
 =========================== -->
 
-<footer>
+<footer id="footer">
 
 <div class="footer-container">
 
@@ -756,6 +827,10 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
 
 </footer>
     </main>
+        <!-- Back To Top Button -->
+<button id="backToTop">
+    <i class="fas fa-arrow-up"></i>
+</button>
     <script src="animations.js"></script>
   </body>
 </html>

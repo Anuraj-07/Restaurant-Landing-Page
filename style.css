@@ -1971,3 +1971,597 @@ transform:translateY(-6px);
     display:flex;
     align-items:stretch;
 }
+
+/* ===========================
+      MOBILE NAVBAR
+=========================== */
+
+@media(max-width:768px){
+
+header{
+
+    padding:18px 5%;
+
+}
+
+nav ul{
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:18px;
+
+}
+
+nav a{
+
+    font-size:16px;
+
+}
+
+}
+
+/* ===========================
+      HERO MOBILE
+=========================== */
+
+@media(max-width:768px){
+
+.hero{
+
+    flex-direction:column;
+
+    text-align:center;
+
+    gap:40px;
+
+}
+
+.left,
+.right{
+
+    width:100%;
+
+}
+
+h1{
+
+    font-size:48px;
+
+}
+
+.tagline{
+
+    font-size:22px;
+
+}
+
+.main-image{
+
+    height:300px;
+
+}
+
+.video-box{
+
+    height:180px;
+
+}
+
+
+.stats-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.dish-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.choose-container{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.reservation-container{
+
+flex-direction:column;
+
+}
+
+.reservation-form{
+
+padding:35px;
+
+}
+
+}
+
+/*==============================
+        FOOTER
+===============================*/
+
+@media (max-width:768px){
+
+.footer-container{
+
+    display:grid;
+    grid-template-columns:1fr;
+    gap:40px;
+    text-align:center;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.newsletter{
+
+    display:flex;
+    width:100%;
+
+}
+
+.newsletter input{
+
+    width:100%;
+    min-width:0;
+
+}
+
+}
+
+.footer-column p{
+
+    overflow-wrap:break-word;
+    word-break:break-word;
+
+}
+
+.social-icons{
+
+    justify-content:center;
+    flex-wrap:wrap;
+
+}
+
+.footer-bottom p{
+
+    text-align:center;
+    line-height:1.8;
+    padding:0 10px;
+
+}
+
+/* ===========================
+      BACK TO TOP BUTTON
+=========================== */
+
+#backToTop{
+
+    position:fixed;
+
+    bottom:30px;
+
+    right:30px;
+
+    width:55px;
+
+    height:55px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#8b0000;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(20px);
+
+    transition:.35s;
+
+    z-index:999;
+
+}
+
+#backToTop.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+#backToTop:hover{
+
+    background:#680000;
+
+    transform:translateY(-5px);
+
+    box-shadow:0 15px 35px rgba(0,0,0,.35);
+
+}
+
+@media(max-width:768px){
+
+#backToTop{
+
+    width:48px;
+
+    height:48px;
+
+    right:18px;
+
+    bottom:18px;
+
+}
+
+}
+
+/* ===========================
+        LOADER
+=========================== */
+
+#loader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#f8f3eb;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:99999;
+
+    transition:opacity .8s ease,
+               visibility .8s ease;
+
+}
+
+.loader-content{
+
+    text-align:center;
+
+}
+
+.loader-content i{
+
+    font-size:65px;
+
+    color:#8b0000;
+
+    margin-bottom:20px;
+
+    animation:bounce 1s infinite alternate;
+
+}
+
+.loader-content h1{
+
+    margin:0;
+
+    font-size:60px;
+
+    color:#8b0000;
+
+}
+
+.loader-content p{
+
+    margin-top:15px;
+
+    color:#666;
+
+    font-size:18px;
+
+}
+
+.loading-bar{
+
+    width:280px;
+
+    height:8px;
+
+    background:#ddd;
+
+    border-radius:50px;
+
+    overflow:hidden;
+
+    margin:35px auto 0;
+
+}
+
+.loading-bar span{
+
+    display:block;
+
+    width:0;
+
+    height:100%;
+
+    background:linear-gradient(90deg,#8b0000,#ffb347);
+
+    animation:loading 2s ease forwards;
+
+}
+
+.loader-hidden{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+@keyframes loading{
+
+    from{
+
+        width:0;
+
+    }
+
+    to{
+
+        width:100%;
+
+    }
+
+}
+
+@keyframes bounce{
+
+    from{
+
+        transform:translateY(0);
+
+    }
+
+    to{
+
+        transform:translateY(-18px);
+
+    }
+
+}
+
+.loader-content{
+
+    animation: fadeIn .8s ease;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ===========================
+    SCROLL PROGRESS BAR
+=========================== */
+
+#progress-bar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:0%;
+
+    height:4px;
+
+    background:linear-gradient(90deg,#8b0000,#ffb347);
+
+    z-index:999999;
+
+    transition:width .1s linear;
+
+    box-shadow:0 0 10px rgba(255,179,71,.7);
+
+}
+
+nav ul li a.active{
+
+    color:#ffb347;
+
+}
+
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:16px 60px;
+}
+
+/* ======LOGO======*/
+
+.logo img{
+    height:70px;
+    display:block;
+}
+
+nav ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    margin-right:30px;
+}
+
+nav ul li a{
+
+    position: relative;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: color .3s ease;
+
+}
+
+nav ul li a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-6px;
+
+    width:0;
+
+    height:3px;
+
+    background:#d4a017;
+
+    border-radius:20px;
+
+    transition:width .35s ease;
+
+}
+
+nav ul li a:hover{
+
+    color:#d4a017;
+
+}
+
+nav ul li a:hover::after{
+
+    width:100%;
+
+}
+
+nav ul li a.active{
+
+    color:#d4a017;
+
+}
+
+nav ul li a.active::after{
+
+    width:100%;
+
+}
+
+/* ============================
+         BUTTON RIPPLE
+==============================*/
+
+.btn{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.ripple{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    transform:scale(0);
+
+    animation:ripple .6s linear;
+
+    background:rgba(255,255,255,.6);
+
+}
+
+@keyframes ripple{
+
+    to{
+
+        transform:scale(4);
+
+        opacity:0;
+
+    }
+
+}
