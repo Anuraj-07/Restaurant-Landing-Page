@@ -2565,3 +2565,277 @@ nav ul li a.active::after{
     }
 
 }
+
+/* ===========================
+        DARK MODE
+=========================== */
+
+#theme-toggle{
+
+    background:none;
+
+    border:none;
+
+    color:white;
+
+    font-size:22px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+#theme-toggle:hover{
+
+    color:#ffb347;
+
+    transform:rotate(20deg);
+
+}
+
+/* Dark Theme */
+
+body.dark{
+
+    background:#171311;
+
+    color:#f5f5f5;
+
+    transition:.4s;
+
+}
+
+body.dark header{
+
+    background:#120d0b;
+
+}
+
+body.dark .about,
+body.dark .gallery,
+body.dark .reservation,
+body.dark .chef-special{
+
+    background:#1f1a17;
+
+}
+
+body.dark .popular-dishes,
+body.dark .why-choose,
+body.dark .testimonials,
+body.dark .cta{
+
+    background:#2a2420;
+
+}
+
+body.dark .card,
+body.dark .choose-card,
+body.dark .testimonial-card,
+body.dark .reservation-form,
+body.dark .chef-card{
+
+    background:#302925;
+
+    color:#fff;
+
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3{
+
+    color:#ffcc70;
+
+}
+
+body.dark p{
+
+    color:#d7d7d7;
+
+}
+
+body.dark footer{
+
+    background:#0f0b09;
+
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:18px 60px;
+}
+
+.nav-right{
+    display:flex;
+    align-items:center;
+    gap:35px;
+}
+
+.nav-right ul{
+    display:flex;
+    gap:35px;
+    list-style:none;
+}
+
+/*================================
+       DARK MODE BACKGROUND
+=================================*/
+
+body.dark-mode .chef-feature{
+    background:#2b2b2b;
+    color:white;
+}
+
+body.dark-mode .chef-feature h3{
+    color:#f4c24d;
+}
+
+body.dark-mode .chef-feature p{
+    color:#ddd;
+}
+
+body.dark-mode .price{
+    color:#ffb347;
+}
+
+body.dark-mode .old-price{
+    color:#999;
+}
+
+body.dark-mode .about,
+body.dark-mode .gallery,
+body.dark-mode .chef-special,
+body.dark-mode .reservation{
+
+    background:#1f1f1f;
+    color:white;
+
+}
+
+/* Dark mode - Chef Special */
+
+body.dark-mode .chef-feature{
+    background: #fff;
+}
+
+body.dark-mode .chef-feature h3{
+    color: #1a1a1a;
+}
+
+body.dark-mode .chef-feature p{
+    color: #444;
+}
+
+body.dark-mode .chef-feature li{
+    color: #222;
+}
+
+body.dark-mode .chef-feature .price{
+    color: #8B0000;
+}
+
+body.dark-mode .chef-feature .old-price{
+    color: #777;
+}
+
+body.dark-mode .chef-feature *{
+    color:#222 !important;
+}
+
+body.dark-mode .chef-feature *{
+    color: black !important;
+}
+
+body.dark-mode .chef-content h3{
+    color:#111 !important;
+}
+
+body.dark-mode .chef-content p{
+    color:#333 !important;
+}
+
+body.dark-mode .chef-content li{
+    color:#222 !important;
+}
+
+body.dark-mode .chef-content *{
+    color:black !important;
+}
+
+body.dark .chef-feature{
+    background:#fff;
+}
+
+body.dark .chef-content{
+    color:#222;
+}
+
+body.dark .chef-content h3{
+    color:#222 !important;
+}
+
+body.dark .chef-content p{
+    color:#555 !important;
+}
+
+body.dark .chef-content li{
+    color:#444 !important;
+}
+
+body.dark .new-price{
+    color:#8B0000 !important;
+}
+
+body.dark .old-price{
+    color:#777 !important;
+}
+
+/*================================
+         LAST POLISH
+=================================*/
+
+::selection{
+    background:#d4a017;
+    color:white;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#f5f0e8;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#7b2d26;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#a63d2f;
+}
+
+button:focus,
+input:focus,
+a:focus{
+
+outline:2px solid #d4a017;
+outline-offset:4px;
+
+}
+
+button,
+.btn{
+    cursor:pointer;
+}
+
+img{
+    user-select:none;
+    -webkit-user-drag:none;
+}
