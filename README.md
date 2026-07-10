@@ -41,12 +41,13 @@ https://anuraj-07.github.io/Restaurant-Landing-Page/
 
 ### Home Page
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bfc2e75f-9ca3-46ac-9c53-96bfa17c9190" />
+<img width="1917" height="970" alt="image" src="https://github.com/user-attachments/assets/d5c0e18b-32c4-4550-8612-fff39d70a8f2" />
 
 
 ### Dark Mode
 
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/74321245-c3d4-48b1-8f2f-3cd44d84863e" />
+
+<img width="1918" height="963" alt="image" src="https://github.com/user-attachments/assets/7aaa39a6-232e-4d0e-869e-3e44b8355043" />
 
 
 ---
