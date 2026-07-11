@@ -1972,127 +1972,127 @@ transform:translateY(-6px);
     align-items:stretch;
 }
 
-/* ===========================
-      MOBILE NAVBAR
-=========================== */
+    /* ===========================
+        MOBILE NAVBAR
+    =========================== */
 
-@media(max-width:768px){
+    @media(max-width:768px){
 
-header{
+    header{
 
-    padding:18px 5%;
+        padding:18px 5%;
 
-}
+    }
 
-nav ul{
+    nav ul{
 
-    flex-wrap:wrap;
+        flex-wrap:wrap;
 
-    justify-content:center;
+        justify-content:center;
 
-    gap:18px;
+        gap:18px;
 
-}
+    }
 
-nav a{
+    nav a{
 
-    font-size:16px;
+        font-size:16px;
 
-}
+    }
 
-}
+    }
 
-/* ===========================
-      HERO MOBILE
-=========================== */
+    /* ===========================
+        HERO MOBILE
+    =========================== */
 
-@media(max-width:768px){
+    @media(max-width:768px){
 
-.hero{
+    .hero{
+
+        flex-direction:column;
+
+        text-align:center;
+
+        gap:40px;
+
+    }
+
+    .left,
+    .right{
+
+        width:100%;
+
+    }
+
+    h1{
+
+        font-size:48px;
+
+    }
+
+    .tagline{
+
+        font-size:22px;
+
+    }
+
+    .main-image{
+
+        height:300px;
+
+    }
+
+    .video-box{
+
+        height:180px;
+
+    }
+
+
+    .stats-container{
+
+    grid-template-columns:1fr;
+
+    }
+
+    }
+
+    @media(max-width:768px){
+
+    .dish-container{
+
+    grid-template-columns:1fr;
+
+    }
+
+    }
+
+    @media(max-width:768px){
+
+    .choose-container{
+
+    grid-template-columns:1fr;
+
+    }
+
+    }
+
+    @media(max-width:768px){
+
+    .reservation-container{
 
     flex-direction:column;
 
-    text-align:center;
+    }
 
-    gap:40px;
+    .reservation-form{
 
-}
+    padding:35px;
 
-.left,
-.right{
+    }
 
-    width:100%;
-
-}
-
-h1{
-
-    font-size:48px;
-
-}
-
-.tagline{
-
-    font-size:22px;
-
-}
-
-.main-image{
-
-    height:300px;
-
-}
-
-.video-box{
-
-    height:180px;
-
-}
-
-
-.stats-container{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.dish-container{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.choose-container{
-
-grid-template-columns:1fr;
-
-}
-
-}
-
-@media(max-width:768px){
-
-.reservation-container{
-
-flex-direction:column;
-
-}
-
-.reservation-form{
-
-padding:35px;
-
-}
-
-}
+    }
 
 /*==============================
         FOOTER
@@ -2838,4 +2838,152 @@ button,
 img{
     user-select:none;
     -webkit-user-drag:none;
+}
+
+/* =========================================
+              MOBILE FIXES 
+========================================= */
+
+@media (max-width:768px){
+
+/* Header */
+header{
+    padding:15px 5%;
+}
+
+nav{
+    flex-direction:column;
+    gap:15px;
+    padding:15px 5%;
+}
+
+.nav-right{
+    width:100%;
+    justify-content:center;
+}
+
+nav ul{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
+
+.logo img{
+    height:65px;
+}
+
+/* Hero */
+.hero{
+    flex-direction:column;
+    text-align:center;
+    gap:35px;
+}
+
+.left,
+.right{
+    width:100%;
+}
+
+.main-image,
+.top-image,
+.video-box{
+    width:100%;
+    height:auto;
+}
+
+/* All grids become single column */
+.stats-container,
+.dish-container,
+.choose-container,
+.gallery-grid,
+.testimonial-container,
+.chef-container,
+.footer-container{
+    display:grid;
+    grid-template-columns:1fr !important;
+    gap:25px;
+}
+
+/* Reservation */
+.reservation-container{
+    flex-direction:column;
+}
+
+.reservation-form{
+    padding:25px;
+}
+
+.form-row{
+    flex-direction:column;
+    gap:0;
+}
+
+/* CTA */
+.cta{
+    text-align:center;
+    padding:70px 20px;
+}
+
+.cta h2{
+    font-size:34px;
+}
+
+.cta-text{
+    font-size:16px;
+}
+
+/* Footer */
+.footer-column{
+    text-align:center;
+}
+
+.social-icons{
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+.newsletter{
+    flex-direction:column;
+    gap:12px;
+}
+
+.newsletter input,
+.newsletter button{
+    width:100%;
+}
+
+/* General */
+h1{
+    font-size:42px;
+}
+
+h2{
+    font-size:32px;
+}
+
+img{
+    max-width:100%;
+    height:auto;
+}
+
+}
+
+/* Extra Small Phones */
+
+@media (max-width:480px){
+
+h1{
+    font-size:34px;
+}
+
+h2{
+    font-size:26px;
+}
+
+.btn,
+.cta-btn,
+button{
+    width:100%;
+}
+
 }
